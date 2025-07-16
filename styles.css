@@ -22,4 +22,43 @@ h1 {
   border: 2px solid #ccc;
   border-radius: 12px;
   padding: 15px;
-  width: 280px
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #5D5D5D;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.ramo {
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background-color: #D9C7FF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ramo.bloqueado {
+  background-color: #CCCCCC;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.ramo.aprobado {
+  background-color: #2D3E50;
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.corequisito {
+  background-color: #B5E0F6;
+}
+
+.ramo:hover:not(.bloqueado):not(.aprobado) {
+  background-color: #BCA9F5;
+}
