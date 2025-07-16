@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fb;
+  background-color: #FFF0F4; /* Fondo rosa pálido */
   margin: 0;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #2D3E50;
+  color: #B23A48;
   margin-bottom: 30px;
 }
 
@@ -19,17 +19,17 @@ h1 {
 }
 
 .semestre {
-  border: 2px solid #ccc;
+  border: 2px solid #e8a0ae;
   border-radius: 12px;
   padding: 15px;
   width: 280px;
-  background-color: #fff;
+  background-color: #F9C5D1; /* Fondo de cada semestre */
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 .semestre h2 {
   text-align: center;
-  color: #5D5D5D;
+  color: #7A1B29;
   font-size: 1.2em;
   margin-bottom: 15px;
 }
@@ -38,7 +38,7 @@ h1 {
   padding: 8px 12px;
   margin: 8px 0;
   border-radius: 6px;
-  background-color: #D9C7FF;
+  background-color: #D9C7FF; /* Lila pastel para no aprobado */
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -50,13 +50,13 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #2D3E50;
+  background-color: #2D3E50; /* Azul marino pastel */
   color: white;
   text-decoration: line-through;
 }
 
 .ramo.corequisito {
-  background-color: #B5E0F6;
+  background-color: #B5E0F6; /* Celeste pastel */
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
