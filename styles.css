@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #F0F4FA; /* Fondo azul claro */
+  background-color: #EAF2FB; /* Celeste pálido */
   margin: 0;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #2A3D66; /* Azul marino */
+  color: #20364B; /* Azul marino oscuro */
   margin-bottom: 30px;
 }
 
@@ -19,17 +19,17 @@ h1 {
 }
 
 .semestre {
-  border: 2px solid #AAC4E5;
+  border: 2px solid #9EBBD9;
   border-radius: 12px;
   padding: 15px;
   width: 280px;
-  background-color: #D6E4F0; /* Azul claro */
+  background-color: #C7DDF0; /* Azul claro pastel */
   box-shadow: 0 4px 8px rgba(0,0,0,0.06);
 }
 
 .semestre h2 {
   text-align: center;
-  color: #2A3D66;
+  color: #20364B;
   font-size: 1.2em;
   margin-bottom: 15px;
 }
@@ -38,27 +38,27 @@ h1 {
   padding: 8px 12px;
   margin: 8px 0;
   border-radius: 6px;
-  background-color: #B8CCE3; /* Azul suave para no aprobado */
+  background-color: #AFCBEF; /* No aprobado */
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .ramo.bloqueado {
-  background-color: #CCCCCC;
-  color: #666;
+  background-color: #D3D3D3;
+  color: #777;
   cursor: not-allowed;
 }
 
 .ramo.aprobado {
-  background-color: #2D3E50; /* Azul marino pastel */
+  background-color: #2A3D66; /* Azul marino oscuro */
   color: white;
   text-decoration: line-through;
 }
 
 .ramo.corequisito {
-  background-color: #B5D9F5; /* Celeste pastel para co-requisitos activos */
+  background-color: #B9D9F6; /* Celeste pastel */
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #A5BFE1;
+  background-color: #91B6E2;
 }
