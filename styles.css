@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #EAF2FB; /* Celeste pálido */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F4F7FB; /* Fondo claro y limpio */
   margin: 0;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #20364B; /* Azul marino oscuro */
+  color: #1B2A41; /* Azul marino elegante */
   margin-bottom: 30px;
 }
 
@@ -19,46 +19,50 @@ h1 {
 }
 
 .semestre {
-  border: 2px solid #9EBBD9;
+  border: 2px solid #C1D3EA;
   border-radius: 12px;
   padding: 15px;
   width: 280px;
-  background-color: #C7DDF0; /* Azul claro pastel */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  background-color: #E0E8F3; /* Azul pastel suave */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .semestre h2 {
   text-align: center;
-  color: #20364B;
-  font-size: 1.2em;
+  color: #1B2A41;
+  font-size: 1.15em;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .ramo {
-  padding: 8px 12px;
+  padding: 10px 12px;
   margin: 8px 0;
   border-radius: 6px;
-  background-color: #AFCBEF; /* No aprobado */
+  background-color: #C6D4EB; /* Azul medio claro */
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  color: #1B2A41;
+  font-size: 0.95em;
+  font-weight: 500;
 }
 
 .ramo.bloqueado {
-  background-color: #D3D3D3;
+  background-color: #D5D5D5;
   color: #777;
   cursor: not-allowed;
 }
 
 .ramo.aprobado {
-  background-color: #2A3D66; /* Azul marino oscuro */
+  background-color: #1B2A41; /* Azul marino */
   color: white;
   text-decoration: line-through;
 }
 
 .ramo.corequisito {
-  background-color: #B9D9F6; /* Celeste pastel */
+  background-color: #B3D5F2; /* Celeste para co-requisitos */
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #91B6E2;
+  background-color: #9EBDE7;
 }
