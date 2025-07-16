@@ -1,13 +1,72 @@
-<!DOCTYPE html><html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Interactiva - Enfermería UNAB</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <h1>Malla Interactiva - Enfermería UNAB</h1>
-  <div id="malla"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fb;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2D3E50;
+  margin-bottom: 30px;
+}
+
+#malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.semestre {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #5D5D5D;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.ramo {
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background-color: #D9C7FF; /* Lila pastel */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.ramo.bloqueado {
+  background-color: #CCCCCC; /* Gris */
+  color: #666;
+  cursor: not-allowed;
+}
+
+.ramo.aprobado {
+  background-color: #2D3E50; /* Azul marino pastel */
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.corequisito {
+  background-color: #B5E0F6; /* Celeste pastel */
+}
+
+.ramo:hover:not(.bloqueado):not(.aprobado) {
+  background-color: #BCA9F5; /* Lila más fuerte al pasar */
+}
+
+.ramo small {
+  display: block;
+  font-size: 0.75em;
+  color: #333;
+  margin-top: 4px;
+}
